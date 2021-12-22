@@ -1,0 +1,1 @@
+<variable-random-uuid isUpperCase="false" name="auto_uuid" order="1" policy="1" random-seed="false" range="2" uid="d86f4402-1f7c-4cbc-a181-3a78d5679781" whenOutOfValues="CYCLE_VALUES"/>

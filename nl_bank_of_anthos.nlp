@@ -1,0 +1,16 @@
+# Project description file
+
+project.name=nl_bank_of_anthos
+project.version=8.3
+project.original.version=8.3
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.original.version=8.0.0
+project.is-open-test-settings-after-upload=true
+project.id=6b9f21df-4a64-458f-8e53-ae493a72d400
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=true
+project.workspace=5e3acde2e860a132744ca916
+project.test-settings=a7fc3c86-cda0-499b-bad4-728bae2b79bc
+team.server.project=/Neotys-Connect/nl_bank_of_anthos.git

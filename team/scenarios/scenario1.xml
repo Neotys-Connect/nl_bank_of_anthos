@@ -1,0 +1,188 @@
+<scenario postMonitoringTime="-1" preMonitoringTime="-1"
+    slaProfileEnabled="false" traceVariables="true" uid="scenario1" virtualUsersStates="true">
+    <!--****** POPULATION POLICY ******-->
+    <population-policy name="Population1">
+        <duration-policy-entry iterations="1" time="600" timeUnit="0" type="2"/>
+        <volume-policy-entry>
+            <rampup-volume-policy delayIncrement="10.0"
+                delayTypeIncrement="1" initialUserNumber="1"
+                iterationNumber="1" maxUserNumber="20" userIncrement="1"/>
+        </volume-policy-entry>
+        <start-stop-policy-entry start-delay="0" start-type="0"
+            stop-delay="60000" stop-type="0"/>
+        <runtime-policy continueOnError="true" thinktimePolicy="0"
+            thinktimeValue="5000" vuStartDelay="0" vuStartMode="0"/>
+        <!--****** POPULATION LG HOSTS ******-->
+        <lg-hosts>
+            <lg-host-entry>$zoneID=Default zone;$lgID=localhost:7100</lg-host-entry>
+        </lg-hosts>
+    </population-policy>
+    <dashboards defaultDashboardUid="Graph board"/>
+    <!--****** DASHBOARDS  ******-->
+    <charts-model-description name="Graph board">
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="User Load and Error Rate" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="UserLoad" monitoredHostName="NeoLoad"
+                scale="1.0" selected="false"/>
+            <action-curve-description
+                actionUid="2ee035d5-0178-378f-8d0a-63218f082d2f"
+                color="200,0,0" dashed="false" populationName=""
+                scale="1.0" selected="false"
+                statisticName="result.errors" zoneName=""/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Overall Throughput" typeName="CLASSIC">
+            <monitor-curve-description color="42,89,26"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="throughput" monitoredHostName="NeoLoad"
+                scale="1.0" selected="false"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true" title="Load Generators CPU usage" typeName="CLASSIC">
+            <monitor-curve-description color="0,255,0"
+                connectionName="NeoLoad" dashed="false"
+                monitorName="lgcpu.localhost:7100"
+                monitoredHostName="LG localhost:7100" scale="1.0" selected="false"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/Total processing time" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.totalProcessingTime"
+                monitoredHostName="Controller-Host" scale="1.0" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/cpu/CPU time" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.cpu.perRequest"
+                monitoredHostName="Controller-Host" scale="1.0" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/IO time" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.ioTime"
+                monitoredHostName="Controller-Host" scale="1.0E-6" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/Number of calls to other services" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.nonDbChildCallCount"
+                monitoredHostName="Controller-Host" scale="1.0" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/Time spent in calls to other services" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.nonDbChildCallTime"
+                monitoredHostName="Controller-Host" scale="1.0E-6" selected="false"/>
+            <monitor-curve-description color="88,183,55"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.dbChildCallTime"
+                monitoredHostName="Controller-Host" scale="1.0E-6" selected="false"/>
+            <monitor-curve-description color="200,0,0"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.waitTime"
+                monitoredHostName="Controller-Host" scale="1.0E-6" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Controller-Host/Dynatrace/Flask (frontend)/builtin/service/Lock time" typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="Dynatrace" dashed="false"
+                monitorName="SERVICE-96AD0851493AB127/builtin:service.lockTime"
+                monitoredHostName="Controller-Host" scale="1.0" selected="true"/>
+        </chart-description>
+        <chart-description autoRange="true"
+            chart-description-type="chart-description-type"
+            domainMarkerVisible="true" granularityLevel="0"
+            historyState="XMIN" includeInReport="false"
+            rangeMarkerVisible="true"
+            title="Prometheus/bank_logical/front /cpu for front " typeName="CLASSIC">
+            <monitor-curve-description color="20,106,203"
+                connectionName="bank_logical" dashed="false"
+                monitorName="0:app:bank, beta_kubernetes_io_arch:amd64, beta_kubernetes_io_instance_type:t3.medium, beta_kubernetes_io_os:linux, container:front, eks_amazonaws_com_capacityType:ON_DEMAND, eks_amazonaws_com_nodegroup:ng-sko-bank-01, eks_amazonaws_com_nodegroup_image:ami-002539dd2c532d0a5, failure_domain_beta_kubernetes_io_region:us-west-2, failure_domain_beta_kubernetes_io_zone:us-west-2d, id:/kubepods/burstable/pod6b6f2664-4b23-4819-9186-6a6be991ac43/077417435af72ba887b4c2261a12607573a4b249686266e482f914678447c363, image:sha256:d0818cf0f9fc57efbcdbe04b2b754d6bc4cd57849c6b16ce69228610695e9d33, instance:ip-192-168-147-4.us-west-2.compute.internal, job:kubernetes-nodes-cadvisor, kubernetes_io_arch:amd64, kubernetes_io_hostname:ip-192-168-147-4.us-west-2.compute.internal, kubernetes_io_os:linux, name:k8s_front_frontend-8589b44874-72jxq_bank_6b6f2664-4b23-4819-9186-6a6be991ac43_0, namespace:bank, node_kubernetes_io_instance_type:t3.medium, pod:frontend-8589b44874-72jxq, topology_kubernetes_io_region:us-west-2, topology_kubernetes_io_zone:us-west-2d"
+                monitoredHostName="Prometheus" scale="1.0" selected="false"/>
+            <monitor-curve-description color="88,183,55"
+                connectionName="bank_logical" dashed="false"
+                monitorName="1:app:bank, beta_kubernetes_io_arch:amd64, beta_kubernetes_io_instance_type:t3.medium, beta_kubernetes_io_os:linux, container:front, eks_amazonaws_com_capacityType:ON_DEMAND, eks_amazonaws_com_nodegroup:ng-sko-bank-01, eks_amazonaws_com_nodegroup_image:ami-002539dd2c532d0a5, failure_domain_beta_kubernetes_io_region:us-west-2, failure_domain_beta_kubernetes_io_zone:us-west-2d, id:/kubepods/burstable/pod6b6f2664-4b23-4819-9186-6a6be991ac43/077417435af72ba887b4c2261a12607573a4b249686266e482f914678447c363, image:sha256:d0818cf0f9fc57efbcdbe04b2b754d6bc4cd57849c6b16ce69228610695e9d33, instance:ip-192-168-147-4.us-west-2.compute.internal, job:kubernetes-nodes-cadvisor, kubernetes_io_arch:amd64, kubernetes_io_hostname:ip-192-168-147-4.us-west-2.compute.internal, kubernetes_io_os:linux, name:k8s_front_frontend-8589b44874-72jxq_bank_6b6f2664-4b23-4819-9186-6a6be991ac43_0, namespace:bank, node_kubernetes_io_instance_type:t3.medium, pod:frontend-8589b44874-72jxq, topology_kubernetes_io_region:us-west-2, topology_kubernetes_io_zone:us-west-2d"
+                monitoredHostName="Prometheus" scale="0.1" selected="false"/>
+            <monitor-curve-description color="200,0,0"
+                connectionName="bank_logical" dashed="false"
+                monitorName="2:__name__:kube_pod_container_status_restarts_total, app_kubernetes_io_instance:prometheus, app_kubernetes_io_managed_by:Helm, app_kubernetes_io_name:kube-state-metrics, container:front, helm_sh_chart:kube-state-metrics-3.0.2, instance:192.168.81.2:8080, job:kubernetes-service-endpoints, kubernetes_name:prometheus-kube-state-metrics, kubernetes_namespace:prometheus, kubernetes_node:ip-192-168-83-185.us-west-2.compute.internal, namespace:bank, pod:frontend-8589b44874-72jxq"
+                monitoredHostName="Prometheus" scale="1.0" selected="true"/>
+        </chart-description>
+        <empty-chart-description/>
+    </charts-model-description>
+    <!--****** END DASHBOARDS  ******-->
+    <!--****** START DATA FILTERS  ******-->
+    <!--****** END DATA FILTERS  ******-->
+    <!--****** START RENDEZ-VOUS POLICIES  ******-->
+    <!--****** END RENDEZ-VOUS POLICIES  ******-->
+    <!--****** START DEBUG POLICY ******-->
+    <debug-policy mode="0"/>
+    <!--****** END DEBUG POLICY ******-->
+    <!--****** START VU STATES ******-->
+    <!--****** END VU STATES ******-->
+    <!--****** START EXCLUSION FILTER ******-->
+    <request-path-exclusion-filter isEnabled="false">
+        <regexps>
+            <regexp>.*\.jpg</regexp>
+            <regexp>.*\.jpeg</regexp>
+            <regexp>.*\.gif</regexp>
+            <regexp>.*\.png</regexp>
+            <regexp>.*\.bmp</regexp>
+            <regexp>.*\.css</regexp>
+            <regexp>.*\.js</regexp>
+            <regexp>.*\.swf</regexp>
+            <regexp>.*\.ico</regexp>
+            <regexp>.*\.jar</regexp>
+            <regexp>.*\.class</regexp>
+            <regexp>.*\.properties</regexp>
+        </regexps>
+    </request-path-exclusion-filter>
+    <!--****** END  EXCLUSION FILTER ******-->
+    <!--****** START DYNATRACE MONITORING ******-->
+    <dynatrace-monitoring>
+        <tag>sko-bank</tag>
+    </dynatrace-monitoring>
+    <!--****** END  DYNATRACE MONITORING ******-->
+    <!--****** START TRACE VARIABLES ******-->
+    <!--****** END TRACE VARIABLES ******-->
+</scenario>

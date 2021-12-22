@@ -1,0 +1,73 @@
+<http-page executeResourcesDynamically="false" name="/"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/1924becf-5482-43a3-8ea4-f8b9bb9ad354.zip"
+    slaProfileEnabled="false" thinkTime="28716"
+    thinkTimeMode="MODE_RANGE_THINK_TIME" thinkTimeRangeEnd="5000"
+    thinkTimeRangeStart="1000" uid="1924becf-5482-43a3-8ea4-f8b9bb9ad354">
+    <embedded-action>6f933b37-b5b7-4ed0-9297-760fe3e10e1e</embedded-action>
+    <embedded-action>83febd4e-2876-4427-9e50-bd44f20c7517</embedded-action>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/" path="/" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/1924becf-5482-43a3-8ea4-f8b9bb9ad354.zip"
+    recordedResponseCode="200" responseSize="7021"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="6f933b37-b5b7-4ed0-9297-760fe3e10e1e" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_87cdcbf4-9598-4640-9402-95686e430ba4.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_87cdcbf4-9598-4640-9402-95686e430ba4.txt</requestContentFileDescription>
+    <header name="sec-fetch-mode" value="navigate"/>
+    <header name="te" value="trailers"/>
+    <header name="sec-fetch-site" value="none"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="upgrade-insecure-requests" value="1"/>
+    <header name="sec-fetch-user" value="?1"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="document"/>
+    <header name="accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 200&#xd;
+date: Mon, 20 Dec 2021 20:35:51 GMT&#xd;
+content-type: text/html; charset=utf-8&#xd;
+content-length: 7021&#xd;
+server: gunicorn</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="1" contentType="text/css; charset=utf-8"
+    eTag="&quot;1639510285.0-10260-2751007513&quot;"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    lastModified="Tue, 14 Dec 2021 19:31:25 GMT"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/static/styles/cymbal.css"
+    path="/static/styles/cymbal.css" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/1924becf-5482-43a3-8ea4-f8b9bb9ad354.zip"
+    recordedResponseCode="200" responseSize="10260"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="83febd4e-2876-4427-9e50-bd44f20c7517" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_7d8a4dfa-6dc6-4d3f-8daf-c0ba7c1f0fbd.css</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_7d8a4dfa-6dc6-4d3f-8daf-c0ba7c1f0fbd.txt</requestContentFileDescription>
+    <header name="sec-fetch-mode" value="no-cors"/>
+    <header name="te" value="trailers"/>
+    <header name="referer" value="https://bank.tricentis.perfreleng.org/"/>
+    <header name="sec-fetch-site" value="same-origin"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="style"/>
+    <header name="accept" value="text/css,*/*;q=0.1"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 200&#xd;
+date: Mon, 20 Dec 2021 20:35:51 GMT&#xd;
+content-type: text/css; charset=utf-8&#xd;
+content-length: 10260&#xd;
+server: gunicorn&#xd;
+last-modified: Tue, 14 Dec 2021 19:31:25 GMT&#xd;
+cache-control: public, max-age=43200&#xd;
+expires: Tue, 21 Dec 2021 08:35:51 GMT&#xd;
+etag: "1639510285.0-10260-2751007513"</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

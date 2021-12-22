@@ -1,0 +1,39 @@
+<http-page enabled="false" executeResourcesDynamically="false"
+    name="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/66ef21ff-119b-4e77-8180-1298535b0882.zip"
+    slaProfileEnabled="false" thinkTime="115"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="66ef21ff-119b-4e77-8180-1298535b0882">
+    <embedded-action>74fae2b9-2e7a-4870-be41-42c4c8091c6d</embedded-action>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/"
+    path="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/66ef21ff-119b-4e77-8180-1298535b0882.zip"
+    recordedResponseCode="404" responseSize="232"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="74fae2b9-2e7a-4870-be41-42c4c8091c6d" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_403f6672-2167-448f-9ede-a6133b506364.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_403f6672-2167-448f-9ede-a6133b506364.txt</requestContentFileDescription>
+    <header name="sec-fetch-mode" value="no-cors"/>
+    <header name="te" value="trailers"/>
+    <header name="referer" value="https://bank.tricentis.perfreleng.org/home"/>
+    <header name="sec-fetch-site" value="same-origin"/>
+    <header name="cookie" value="token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoidGVzdHVzZXIiLCJhY2N0IjoiMTAxMTIyNjExMSIsIm5hbWUiOiJUZXN0IFVzZXIiLCJpYXQiOjE2NDAwMzI1ODcsImV4cCI6MTY0MDAzNjE4N30.tXjPK0UE0wiSzZiYLGMgG0hn_-LM7SXbqEL0HaHEMgeytCVcHOAisCtIdfRLXVEJcyNdMAk0NwsXBx2aAupzy-IVCmQhxsfOVmrL-ulfbLUrWfk73z7TAwXhlsWV-e4qXk93fX2XtA5JiQ_jpGY-ULXR24mHXHiK9o9wUaNEs98YaspPNJqH0Hgqt06TwHjAHSn4tIwSyaZsbpixEdA3uvPEAE9ie4CCB0vh224DOUWpP6I60cASU0knNkYZEPyb9T7uzRWzlUg8srP-e2SXaH8tQ9Wx7oRHzjeLAm1egQ7gYV_LeyeLlPHDGULDzcxafy39UnCl13uKQePCPVUOPauCazc6QDP0bqyDdr0NzFyeR-uBpMPqnZmhbpNLHJFuJruyZcPEMN3tEN5la7prx27mDfcFPWWfSx4P7efrLko5TSbKxhw1mJpiGALwbHOdUnPVHFJj60CjBskkXsJUvVvjbkiFHfEoe3Sv24YWYjY14DAnExi7G3B-AKvwv71AruoKqeEoifHEE8lHlj8KEcICugi8Zdg_u5tMtF9Ly7Vfrl-EyUKWMUJwvocDUPOyWAtwuDvfbbipqVbPd7ZyEKcXmRhdfHugGaTIf4pClJiuf2kQmt8ZhilTJ7dmu61VhuOE4zNn1S_835WcGA3__KdQ38GN6vD0jFvYHcsShUM"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="image"/>
+    <header name="accept" value="image/avif,image/webp,*/*"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 404&#xd;
+date: Mon, 20 Dec 2021 20:36:27 GMT&#xd;
+content-type: text/html; charset=utf-8&#xd;
+content-length: 232&#xd;
+server: gunicorn</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

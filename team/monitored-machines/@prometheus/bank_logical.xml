@@ -1,0 +1,27 @@
+<connection-prometheus interval="30000" name="bank_logical"
+    server-name="Prometheus" server-port="0" step="5000"
+    uid="03dda43a-eb16-4515-ae46-dd65762d0d6b" url="/">
+    <monitor-category name="Queries" short-display-name="Queries">
+        <monitor-prometheus callTime="ON_BENCH" computing="0"
+            format="NUMBER" group-by="{{container}} "
+            legend-format="cpu for {{container}} "
+            name="rate(container_cpu_user_seconds_total{namespace=&quot;bank&quot;,container!=&quot;POD&quot;,container!=&quot;&quot;}[2m:5s]) * 100&#xa;"
+            promql="rate(container_cpu_user_seconds_total{namespace=&quot;bank&quot;,container!=&quot;POD&quot;,container!=&quot;&quot;}[2m:5s]) * 100&#xa;"
+            sampling="0"
+            short-display-name="rate(container_cpu_user_seconds_total{namespace=_bank_,co..." unit=""/>
+        <monitor-prometheus callTime="ON_BENCH" computing="0"
+            format="NUMBER" group-by="{{container}}"
+            legend-format="mem for {{container}}"
+            name="container_memory_usage_bytes{namespace=&quot;bank&quot;,container!=&quot;POD&quot;,container!=&quot;&quot;} / 1000000"
+            promql="container_memory_usage_bytes{namespace=&quot;bank&quot;,container!=&quot;POD&quot;,container!=&quot;&quot;} / 1000000"
+            sampling="0"
+            short-display-name="container_memory_usage_bytes{namespace=_bank_,container!=..." unit=""/>
+        <monitor-prometheus callTime="ON_BENCH" computing="0"
+            format="NUMBER" group-by="{{container}}"
+            legend-format="restarts for {{container}}"
+            name="kube_pod_container_status_restarts_total{namespace=&quot;bank&quot;}"
+            promql="kube_pod_container_status_restarts_total{namespace=&quot;bank&quot;}"
+            sampling="0"
+            short-display-name="kube_pod_container_status_restarts_total{namespace=_bank_}" unit=""/>
+    </monitor-category>
+</connection-prometheus>

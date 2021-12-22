@@ -1,0 +1,38 @@
+<http-page enabled="false" executeResourcesDynamically="false"
+    name="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/911ffa1b-28f1-46eb-ad37-90a53b73bb98.zip"
+    slaProfileEnabled="false" thinkTime="62"
+    thinkTimeMode="MODE_SIMPLE_THINK_TIME" thinkTimeRangeEnd=""
+    thinkTimeRangeStart="" uid="911ffa1b-28f1-46eb-ad37-90a53b73bb98">
+    <embedded-action>b2e00ace-feab-44c3-a0a9-ad80d2a0f4ad</embedded-action>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/"
+    path="/%E2%80%9Dstatic/img/favicon.png%E2%80%9D/" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/911ffa1b-28f1-46eb-ad37-90a53b73bb98.zip"
+    recordedResponseCode="404" responseSize="232"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="b2e00ace-feab-44c3-a0a9-ad80d2a0f4ad" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_0de3ac16-3fd1-451d-b397-153dc3199acd.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_0de3ac16-3fd1-451d-b397-153dc3199acd.txt</requestContentFileDescription>
+    <header name="sec-fetch-mode" value="no-cors"/>
+    <header name="te" value="trailers"/>
+    <header name="referer" value="https://bank.tricentis.perfreleng.org/"/>
+    <header name="sec-fetch-site" value="same-origin"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="image"/>
+    <header name="accept" value="image/avif,image/webp,*/*"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 404&#xd;
+date: Mon, 20 Dec 2021 20:35:51 GMT&#xd;
+content-type: text/html; charset=utf-8&#xd;
+content-length: 232&#xd;
+server: gunicorn</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

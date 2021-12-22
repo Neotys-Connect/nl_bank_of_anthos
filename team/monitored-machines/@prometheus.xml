@@ -1,0 +1,5 @@
+<monitored-host host-name="prometheus.tricentis.perfreleng.org"
+    mehost-name="localhost" uid="Prometheus">
+    <embedded-action>03dda43a-eb16-4515-ae46-dd65762d0d6b</embedded-action>
+    <embedded-action>725a453d-ec00-41af-a470-4dcd2b8c236c</embedded-action>
+</monitored-host>

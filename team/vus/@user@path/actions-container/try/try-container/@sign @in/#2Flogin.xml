@@ -1,0 +1,143 @@
+<http-page executeResourcesDynamically="false" name="/login"
+    playRequestsSequentially="false"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/44f3de00-5e6b-47c0-8522-ae3711782a67.zip"
+    slaProfileEnabled="false" thinkTime="12734"
+    thinkTimeMode="MODE_RANGE_THINK_TIME" thinkTimeRangeEnd="5000"
+    thinkTimeRangeStart="2000" uid="44f3de00-5e6b-47c0-8522-ae3711782a67">
+    <embedded-action>50c5efb3-75aa-4cb9-813b-adff1fd66399</embedded-action>
+    <embedded-action>a1090e42-74cb-4cad-9517-c3e1049e2470</embedded-action>
+    <embedded-action>d3865819-c1e2-411a-89fb-26d41f8df17a</embedded-action>
+</http-page>
+<http-action actionType="1" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="POST" name="/login" path="/login" postCharset="iso-8859-1"
+    postType="1"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/44f3de00-5e6b-47c0-8522-ae3711782a67.zip"
+    recordedResponseCode="302"
+    refererUid="ea43547c-0c20-4aa4-8ba4-d1e63b826ee0" responseSize="289"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="50c5efb3-75aa-4cb9-813b-adff1fd66399" useKeepAlive="false">
+    <binaryPostContentBase64><![CDATA[dXNlcm5hbWU9dGVzdHVzZXImcGFzc3dvcmQ9JHtBdXRvUGFzc3dvcmRfMX0=]]></binaryPostContentBase64>
+    <responsePageFileDescription>recorded-responses/res_fbe5dc21-4e53-4fc5-b8e0-bf51be1edb08.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_fbe5dc21-4e53-4fc5-b8e0-bf51be1edb08.txt</requestContentFileDescription>
+    <parameter encodeName="true" encodeValue="true" name="username"
+        recordRawValue="testuser" separator="=" value="testuser" valueMode="USE_VALUE"/>
+    <parameter encodeName="true" encodeValue="true" name="password"
+        recordRawValue="${AutoPassword_1}" separator="="
+        value="${AutoPassword_1}" valueMode="USE_VALUE"/>
+    <header name="sec-fetch-mode" value="navigate"/>
+    <header name="referer" value="https://bank.tricentis.perfreleng.org/"/>
+    <header name="sec-fetch-site" value="same-origin"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="origin" value="https://bank.tricentis.perfreleng.org"/>
+    <header name="sec-fetch-user" value="?1"/>
+    <header name="accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"/>
+    <header name="te" value="trailers"/>
+    <header name="upgrade-insecure-requests" value="1"/>
+    <header name="content-type" value="application/x-www-form-urlencoded"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="document"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 302&#xd;
+date: Mon, 20 Dec 2021 20:36:27 GMT&#xd;
+content-type: text/html; charset=utf-8&#xd;
+content-length: 289&#xd;
+location: http://bank.tricentis.perfreleng.org/home&#xd;
+server: gunicorn&#xd;
+set-cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoidGVzdHVzZXIiLCJhY2N0IjoiMTAxMTIyNjExMSIsIm5hbWUiOiJUZXN0IFVzZXIiLCJpYXQiOjE2NDAwMzI1ODcsImV4cCI6MTY0MDAzNjE4N30.tXjPK0UE0wiSzZiYLGMgG0hn_-LM7SXbqEL0HaHEMgeytCVcHOAisCtIdfRLXVEJcyNdMAk0NwsXBx2aAupzy-IVCmQhxsfOVmrL-ulfbLUrWfk73z7TAwXhlsWV-e4qXk93fX2XtA5JiQ_jpGY-ULXR24mHXHiK9o9wUaNEs98YaspPNJqH0Hgqt06TwHjAHSn4tIwSyaZsbpixEdA3uvPEAE9ie4CCB0vh224DOUWpP6I60cASU0knNkYZEPyb9T7uzRWzlUg8srP-e2SXaH8tQ9Wx7oRHzjeLAm1egQ7gYV_LeyeLlPHDGULDzcxafy39UnCl13uKQePCPVUOPauCazc6QDP0bqyDdr0NzFyeR-uBpMPqnZmhbpNLHJFuJruyZcPEMN3tEN5la7prx27mDfcFPWWfSx4P7efrLko5TSbKxhw1mJpiGALwbHOdUnPVHFJj60CjBskkXsJUvVvjbkiFHfEoe3Sv24YWYjY14DAnExi7G3B-AKvwv71AruoKqeEoifHEE8lHlj8KEcICugi8Zdg_u5tMtF9Ly7Vfrl-EyUKWMUJwvocDUPOyWAtwuDvfbbipqVbPd7ZyEKcXmRhdfHugGaTIf4pClJiuf2kQmt8ZhilTJ7dmu61VhuOE4zNn1S_835WcGA3__KdQ38GN6vD0jFvYHcsShUM; Expires=Mon, 20-Dec-2021 21:36:27 GMT; Max-Age=3600; Path=/</responseHeaders>
+    <record-html-infos extractorId="login-form" extractorOccurence="1"
+        extractorRegExp="false" htmlType="2"/>
+</http-action>
+<http-action actionType="2" contentType="text/html"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/home" path="/home" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/44f3de00-5e6b-47c0-8522-ae3711782a67.zip"
+    recordedResponseCode="301"
+    refererUid="50c5efb3-75aa-4cb9-813b-adff1fd66399" responseSize="134"
+    serverUid="bank.tricentis.perfreleng.org" slaProfileEnabled="false"
+    uid="a1090e42-74cb-4cad-9517-c3e1049e2470" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_c8229e58-b895-4ea5-be65-9c30da4a1015.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_c8229e58-b895-4ea5-be65-9c30da4a1015.txt</requestContentFileDescription>
+    <header name="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"/>
+    <header name="Accept-Encoding" value="gzip, deflate"/>
+    <header name="Accept-Language" value="en-US,en;q=0.5"/>
+    <header name="Connection" value="keep-alive"/>
+    <header name="Cookie" value="token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoidGVzdHVzZXIiLCJhY2N0IjoiMTAxMTIyNjExMSIsIm5hbWUiOiJUZXN0IFVzZXIiLCJpYXQiOjE2NDAwMzI1ODcsImV4cCI6MTY0MDAzNjE4N30.tXjPK0UE0wiSzZiYLGMgG0hn_-LM7SXbqEL0HaHEMgeytCVcHOAisCtIdfRLXVEJcyNdMAk0NwsXBx2aAupzy-IVCmQhxsfOVmrL-ulfbLUrWfk73z7TAwXhlsWV-e4qXk93fX2XtA5JiQ_jpGY-ULXR24mHXHiK9o9wUaNEs98YaspPNJqH0Hgqt06TwHjAHSn4tIwSyaZsbpixEdA3uvPEAE9ie4CCB0vh224DOUWpP6I60cASU0knNkYZEPyb9T7uzRWzlUg8srP-e2SXaH8tQ9Wx7oRHzjeLAm1egQ7gYV_LeyeLlPHDGULDzcxafy39UnCl13uKQePCPVUOPauCazc6QDP0bqyDdr0NzFyeR-uBpMPqnZmhbpNLHJFuJruyZcPEMN3tEN5la7prx27mDfcFPWWfSx4P7efrLko5TSbKxhw1mJpiGALwbHOdUnPVHFJj60CjBskkXsJUvVvjbkiFHfEoe3Sv24YWYjY14DAnExi7G3B-AKvwv71AruoKqeEoifHEE8lHlj8KEcICugi8Zdg_u5tMtF9Ly7Vfrl-EyUKWMUJwvocDUPOyWAtwuDvfbbipqVbPd7ZyEKcXmRhdfHugGaTIf4pClJiuf2kQmt8ZhilTJ7dmu61VhuOE4zNn1S_835WcGA3__KdQ38GN6vD0jFvYHcsShUM"/>
+    <header name="Host" value="bank.tricentis.perfreleng.org"/>
+    <header name="Upgrade-Insecure-Requests" value="1"/>
+    <header name="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/1.1 301 Moved Permanently&#xd;
+Server: awselb/2.0&#xd;
+Date: Mon, 20 Dec 2021 20:36:27 GMT&#xd;
+Content-Type: text/html&#xd;
+Content-Length: 134&#xd;
+Connection: keep-alive&#xd;
+Location: https://bank.tricentis.perfreleng.org:443/home</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>
+<http-action actionType="2" contentType="text/html; charset=utf-8"
+    extractorInjectPathPolicy="2" extractorPathPolicy="1"
+    followRedirects="false" generatedByClient="false"
+    linkExtractorSeveralMatchOccurrence="1"
+    linkExtractorSeveralMatchPolicy="1" linkExtractorType="6"
+    method="GET" name="/home" path="/home" postCharset="" postType="2"
+    recordedArtifactZipFileName="team/vus/@user@path/%resources%/recorded-artifacts/44f3de00-5e6b-47c0-8522-ae3711782a67.zip"
+    recordedResponseCode="200"
+    refererUid="a1090e42-74cb-4cad-9517-c3e1049e2470"
+    responseSize="46042" serverUid="bank.tricentis.perfreleng.org"
+    slaProfileEnabled="false" uid="d3865819-c1e2-411a-89fb-26d41f8df17a" useKeepAlive="false">
+    <responsePageFileDescription>recorded-responses/res_62afb477-518a-4089-8d93-2012ba133556.0.0.0.0.0.html</responsePageFileDescription>
+    <requestContentFileDescription>recorded-requests/req_62afb477-518a-4089-8d93-2012ba133556.txt</requestContentFileDescription>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="1" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="0" extractTypeAdv="0" extractTypeSimple="0"
+        matchNumber="1" matchNumberAdv="1" matchNumberSimple="1"
+        name="account_number"
+        regExp="&lt;option value='\{&quot;account_num&quot;: &quot;(.*?)&quot;"
+        regExpAdv="&lt;option value='\{&quot;account_num&quot;: &quot;(.*?)&quot;"
+        setDefaultValue="true" startsWithSimple="" template="$1$"
+        templateAdv="$1$" uid="3cee5b30-3573-49b9-bfb4-08abbdcce2a0" xpath=""/>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="1" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="0" extractTypeAdv="0" extractTypeSimple="0"
+        matchNumber="1" matchNumberAdv="1" matchNumberSimple="1"
+        name="routing_number"
+        regExp="&quot;account_num&quot;: &quot;(.*?)&quot;, &quot;routing_num&quot;: &quot;(.*?)&quot;"
+        regExpAdv="&quot;account_num&quot;: &quot;(.*?)&quot;, &quot;routing_num&quot;: &quot;(.*?)&quot;"
+        setDefaultValue="true" startsWithSimple="" template="$2$"
+        templateAdv="$2$" uid="9ad76cf8-90b8-4d7c-9508-bc81b4a82ad4" xpath=""/>
+    <variable-extractor assertionOnNoMatch="true"
+        defaultValue="&lt;NOT FOUND>" displayMode="1" endsWithSimple=""
+        extractFromVarNameAdv="" extractFromVarNameSimple=""
+        extractType="3" extractTypeAdv="3" extractTypeSimple="0"
+        matchNumber="1" matchNumberAdv="1" matchNumberSimple="1"
+        name="pmt_account_num" regExp="value=&quot;(.*?)&quot;"
+        regExpAdv="value=&quot;(.*?)&quot;" setDefaultValue="true"
+        startsWithSimple="" template="$1$" templateAdv="$1$"
+        uid="9b5a9c67-09d4-41e4-8952-aeb5693d278d" xpath="//select[@id='payment-accounts']/option"/>
+    <header name="sec-fetch-mode" value="navigate"/>
+    <header name="te" value="trailers"/>
+    <header name="sec-fetch-site" value="cross-site"/>
+    <header name="cookie" value="token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VyIjoidGVzdHVzZXIiLCJhY2N0IjoiMTAxMTIyNjExMSIsIm5hbWUiOiJUZXN0IFVzZXIiLCJpYXQiOjE2NDAwMzI1ODcsImV4cCI6MTY0MDAzNjE4N30.tXjPK0UE0wiSzZiYLGMgG0hn_-LM7SXbqEL0HaHEMgeytCVcHOAisCtIdfRLXVEJcyNdMAk0NwsXBx2aAupzy-IVCmQhxsfOVmrL-ulfbLUrWfk73z7TAwXhlsWV-e4qXk93fX2XtA5JiQ_jpGY-ULXR24mHXHiK9o9wUaNEs98YaspPNJqH0Hgqt06TwHjAHSn4tIwSyaZsbpixEdA3uvPEAE9ie4CCB0vh224DOUWpP6I60cASU0knNkYZEPyb9T7uzRWzlUg8srP-e2SXaH8tQ9Wx7oRHzjeLAm1egQ7gYV_LeyeLlPHDGULDzcxafy39UnCl13uKQePCPVUOPauCazc6QDP0bqyDdr0NzFyeR-uBpMPqnZmhbpNLHJFuJruyZcPEMN3tEN5la7prx27mDfcFPWWfSx4P7efrLko5TSbKxhw1mJpiGALwbHOdUnPVHFJj60CjBskkXsJUvVvjbkiFHfEoe3Sv24YWYjY14DAnExi7G3B-AKvwv71AruoKqeEoifHEE8lHlj8KEcICugi8Zdg_u5tMtF9Ly7Vfrl-EyUKWMUJwvocDUPOyWAtwuDvfbbipqVbPd7ZyEKcXmRhdfHugGaTIf4pClJiuf2kQmt8ZhilTJ7dmu61VhuOE4zNn1S_835WcGA3__KdQ38GN6vD0jFvYHcsShUM"/>
+    <header name="accept-language" value="en-US,en;q=0.5"/>
+    <header name="upgrade-insecure-requests" value="1"/>
+    <header name="sec-fetch-user" value="?1"/>
+    <header name="accept-encoding" value="gzip, deflate, br"/>
+    <header name="sec-fetch-dest" value="document"/>
+    <header name="accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"/>
+    <header name="user-agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:95.0) Gecko/20100101 Firefox/95.0"/>
+    <responseHeaders>HTTP/2.0 200&#xd;
+date: Mon, 20 Dec 2021 20:36:27 GMT&#xd;
+content-type: text/html; charset=utf-8&#xd;
+content-length: 46042&#xd;
+server: gunicorn</responseHeaders>
+    <record-html-infos extractorRegExp="false" htmlType="0"/>
+</http-action>

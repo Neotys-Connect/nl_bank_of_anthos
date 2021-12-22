@@ -1,0 +1,7 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="Send" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="ff4a4c3d-fcd5-4b75-9736-fcd9393e26cc" weightsEnabled="false">
+    <weighted-embedded-action uid="70de0fa9-6354-458c-adf5-a950c8cd6df7"/>
+    <weighted-embedded-action uid="1cde62e3-bd2e-48e5-bb40-3c982142527c"/>
+</basic-logical-action-container>

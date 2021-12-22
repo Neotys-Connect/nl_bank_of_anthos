@@ -1,0 +1,6 @@
+<basic-logical-action-container element-number="1" execution-type="0"
+    name="Deposit" pacingEnd="0" pacingMode="MODE_NO_PACING"
+    pacingStart="0" pacingValue="0" slaProfileEnabled="false"
+    uid="868330d4-989a-4545-86f4-84cf033af6bc" weightsEnabled="false">
+    <weighted-embedded-action uid="9c003e0c-dbc8-4090-b184-d1fc9eeed057"/>
+</basic-logical-action-container>
